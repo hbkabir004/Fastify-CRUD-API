@@ -21,7 +21,6 @@ function routes(app, opts, done) {
     });
 
     // Create a new member
-
     //Test Command: curl -X POST -H "Content-Type: application/json" -d '{"name": "New Item"}' http://localhost:3000/items
     app.post('/members', (request, reply) => {
         const newmember = request.body;
